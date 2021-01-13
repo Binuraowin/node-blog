@@ -3,11 +3,16 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = 
+var app = express();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var app = express();
+const dbURI = 'mongodb+srv://binura:binura@cluster0.ljytl.mongodb.net/blog?retryWrites=true&w=majority'
+mon
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
